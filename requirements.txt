@@ -1,1 +1,8 @@
-
+bleach
+requests
+Flask>=2.2.2
+flask-cors
+gunicorn==20.1.0
+werkzeug>=2.2.2
+psycopg2
+supabase
