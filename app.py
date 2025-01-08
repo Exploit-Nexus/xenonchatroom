@@ -1,6 +1,7 @@
 from flask import Flask
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/hello', methods=['GET'])
 def hello_world():
@@ -8,3 +9,7 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+import requests
+from flask import Flask, request, jsonify
+from flask_cors import CORS
